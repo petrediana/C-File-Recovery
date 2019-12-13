@@ -1,1 +1,14 @@
 # C-File-Recovery
+
+	  the file we are trying to recover
+	  still exists in the current process'
+	  fd directory because the file descriptor
+	  was not yet closed, and until the last
+	  file descriptor is closed, the file
+	  will continue to exist on the disk.
+	 
+	  In our case, the file we're trying
+	  to recover can be found at
+	  /proc/proc_id/fd/3 because it's the only
+	  open file.
+	  0 is stdin, 1 is stdout, 2 is stderr
